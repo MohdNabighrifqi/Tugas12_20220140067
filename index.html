@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>DOM Javascript</title>
+</head>
+<body>
+    <div class ="container">
+        <div class = "header">
+            <h3>Pendaftaran Peminatan</h3>
+        </div>
+        <form action = "">
+            <label for ="nama" style="font-weight:bold;">Nama</label><br>
+            <input type = "text" placeholder = "Nama anda"id ="nama"><br><br>
+            <label for ="nim" style="font-weight:bold;">NIM</label><br>
+            <input type = "text" placeholder = "NIM anda"id ="nim"><br>
+            <p> Peminatan Pada bidan: </p>
+
+            <input type = "radio" name="Peminatan" id="programing" value="programing">
+            <label for ="programing">programing</label>
+            <input type = "radio" name="Peminatan" id="desain" value="desain">
+            <label for ="programing">desain</label>
+            <input type = "radio" name="Peminatan" id="jaringan" value="jaringan">
+            <label for ="programing">jaringan</label>
+            <input type = "radio" name="Peminatan" id="data" value="data">
+            <label for ="programing">data</label>
+
+            <laber for ="angkatan" style="font-weight: bold;">Angkatan</laber><br>
+            <select name ="angkatan" id ="angkatan" style="height: 50px;">
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+            </select>
+
+            <laber for ="tanggal" style="font-weight: bold;">Tanggal</laber><br>
+            <input type ="text" id ="tanggal" readonly><br><br>
+
+            <laber for ="alamat" style="font-weight: bold;">Alamat</laber><br>
+            <textarea placeholder="Tulis Alamat mu disini" name ="alamat" cols="30" rows="5"></textarea>
+            <button type ="submit" onclick="kirimdata()">Kirim</button>
+
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="script.js"></script>
+</body>
+</html>
